@@ -1,194 +1,48 @@
-Bern and BeerCans website
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Beer Run — Fresh Brews, Fast</title>
-  <meta name="description" content="Beer Run — craft and classic beers delivered fast. Local tap suggestions, events and contact." />
-  <style>
-    :root{
-      --bg:#0f1724; --card:#0b1220; --accent:#f6b042; --muted:#9aa4b2; --glass: rgba(255,255,255,0.04);
-      --max-width:1100px; --radius:12px;
-      font-family: system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0; color:#e6eef6; background:
-      linear-gradient(180deg,#071026 0%, #071829 60%), url('') no-repeat center/cover;
-      -webkit-font-smoothing:antialiased;
-    }
-    header{
-      background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      position:sticky; top:0; z-index:30; backdrop-filter: blur(6px);
-      border-bottom:1px solid rgba(255,255,255,0.03);
-    }
-    .container{max-width:var(--max-width); margin:0 auto; padding:0 20px;}
-    nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0;}
-    .brand{display:flex; align-items:center; gap:12px; font-weight:700}
-    .logo{
-      width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ff7b4a);
-      display:flex;align-items:center;justify-content:center;color:#081325;font-weight:800;font-size:18px;
-      box-shadow:0 6px 18px rgba(246,176,66,0.10);
-    }
-    .navlinks{display:flex; gap:18px; align-items:center}
-    .navlinks a{color:var(--muted); text-decoration:none; font-weight:600}
-    .cta{background:var(--accent); color:#081325; padding:8px 14px; border-radius:10px; text-decoration:none; font-weight:700}
-    /* hero */
-    .hero{display:grid; grid-template-columns:1fr 420px; gap:30px; align-items:center; padding:60px 0}
-    .hero h1{font-size:40px; line-height:1.05; margin:0 0 16px;}
-    .hero p{color:var(--muted); margin:0 0 20px;}
-    .card{background:var(--card); border-radius:var(--radius); padding:18px; box-shadow:0 8px 26px rgba(2,8,23,0.6)}
-    /* quick list */
-    .features{display:flex; gap:12px; flex-wrap:wrap}
-    .feature{background:var(--glass); padding:10px 12px; border-radius:10px; color:var(--muted); font-weight:600}
-    /* right column mockup */
-    .mock{
-      height:360px; border-radius:12px; display:flex; align-items:center; justify-content:center;
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border:1px solid rgba(255,255,255,0.03);
-      color:var(--muted);
-    }
-    /* grid of beers */
-    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:28px}
-    .beer{background:var(--card); padding:14px; border-radius:12px; text-align:center}
-    .beer img{width:100%; height:120px; object-fit:cover; border-radius:8px; margin-bottom:10px}
-    .beer h4{margin:6px 0 4px}
-    .beer p{color:var(--muted); font-size:13px; margin:0}
-    /* CTA area */
-    .cta-row{display:flex; gap:12px; margin-top:20px}
-    /* footer */
-    footer{margin-top:60px;padding:30px 0; color:var(--muted); border-top:1px solid rgba(255,255,255,0.02)}
-    /* responsive */
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr; padding:36px 0}
-      .grid{grid-template-columns:repeat(2,1fr)}
-      .navlinks{display:none}
-    }
-    @media (max-width:520px){
-      .grid{grid-template-columns:1fr}
-      .logo{width:36px;height:36px;font-size:16px}
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This is for responsive design-->>
+  <title>Beer Run — Fresh brews on the run</title>
+  <a href = "https://github.com/andyomollo/flatiron-python-flask-curriculum" target ="_blank" rel ="noopener noreferrer" > My GitHub</a> <!--Noopenner and noreferrer help with phishing attacks to fradulent links by using window.opener.location ="mymalicioussite.html" or document.referrer on console-->>
+   <style>
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #container > div{
+            background-color: greenyellow;
+            padding: 20px;
+            font-size: 20px;
+            margin: 20px;
+            width: 200px;
+        }
+        #container > div:hover{
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <div class="brand">
-          <div class="logo">BR</div>
-          <div>
-            <div style="font-size:14px;color:var(--accent)">Beer Run</div>
-            <div style="font-size:12px;color:var(--muted);margin-top:2px">Fresh brews. Fast runs.</div>
-          </div>
-        </div>
+  <h1><strong> This is the Beerun website</strong></h1>
+  <div id ="container">
+  <img src ="../images/beerpong.jpeg" alt ="Beer image" height = "310" width = "210">
+  <img src ="../images/crafty.jpeg" alt ="Beer image" height = "310" width = "210">
+  <img src ="../images/beerpong.jpeg" alt ="Beer image" height = "310" width = "210">
+  <img src ="../images/beerpong.jpeg" alt ="Beer image" height = "310" width = "210">
+  <img src ="../images/crafty.jpeg" alt ="Beer image" height = "310" width = "210">
+  <img src ="../images/beerpong.jpeg" alt ="Beer image" height = "310" width = "210">
+  <img src ="../images/beerpong.jpeg" alt ="Beer image" height = "310" width = "210">
+  <img src ="../images/crafty.jpeg" alt ="Beer image" height = "310" width = "310">
+  </div>
 
-        <div class="navlinks" aria-hidden="true">
-          <a href="#beers">Beers</a>
-          <a href="#about">About</a>
-          <a href="#locations">Locations</a>
-          <a href="#contact">Contact</a>
-          <a class="cta" href="#order">Order</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="hero">
-      <div>
-        <h1>Beer Run — craft and classic beers delivered fast</h1>
-        <p>Discover curated local brews, taproom picks and quick delivery. Perfect for nights in, BBQs and small get-togethers.</p>
-
-        <div class="card">
-          <div class="features">
-            <div class="feature">Local picks</div>
-            <div class="feature">Same-day delivery</div>
-            <div class="feature">Taproom favorites</div>
-            <div class="feature">Sustainable packaging</div>
-          </div>
-
-          <div class="grid" id="beers" aria-live="polite">
-            <article class="beer">
-              <img src="https://images.unsplash.com/photo-1542445588-0f0b90b3f6a0?q=80&w=800&auto=format&fit=crop&crop=faces" alt="Amber Ale">
-              <h4>Amber Ale</h4>
-              <p>Balanced malt, caramel notes — 5.2%</p>
-            </article>
-            <article class="beer">
-              <img src="https://images.unsplash.com/photo-1515488041520-5a9c3d2f64e1?q=80&w=800&auto=format&fit=crop&crop=faces" alt="Pilsner">
-              <h4>Classic Pilsner</h4>
-              <p>Crisp, bright and refreshing — 4.8%</p>
-            </article>
-            <article class="beer">
-              <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=800&auto=format&fit=crop&crop=faces" alt="Stout">
-              <h4>Midnight Stout</h4>
-              <p>Roasty, chocolate undertones — 6.0%</p>
-            </article>
-          </div>
-
-          <div class="cta-row">
-            <a class="cta" href="#order">Order Now</a>
-            <a style="color:var(--muted); align-self:center; text-decoration:none" href="#locations">Find a taproom</a>
-          </div>
-        </div>
-      </div>
-
-      <aside class="mock card">
-        <div style="text-align:center; padding:16px">
-          <h3 style="margin:0 0 8px">Quick Order</h3>
-          <p style="color:var(--muted); margin:0 0 16px">Pick a beer, choose delivery or pickup.</p>
-          <div style="display:flex; gap:8px; justify-content:center;">
-            <button style="background:var(--accent); color:#081325; border:none; padding:10px 12px; border-radius:10px; font-weight:700">Amber Ale</button>
-            <button style="background:transparent; color:var(--muted); border:1px solid rgba(255,255,255,0.04); padding:10px 12px; border-radius:10px">Pilsner</button>
-          </div>
-        </div>
-      </aside>
-    </section>
-
-    <section id="about" style="margin:40px 0">
-      <div class="card">
-        <h3 style="margin-top:0">About Beer Run</h3>
-        <p style="color:var(--muted)">Beer Run is a local-first beer discovery and delivery service. We partner with small breweries and taprooms to bring fresh pours and favorites straight to your door. Sustainability and community are at our core.</p>
-      </div>
-    </section>
-
-    <section id="locations" style="margin-bottom:40px">
-      <div class="card">
-        <h3 style="margin-top:0">Locations & Taprooms</h3>
-        <p style="color:var(--muted)">We operate in selected neighbourhoods. Check our live map (coming soon) or visit a partner taproom to taste before you buy.</p>
-      </div>
-    </section>
-
-    <section id="contact" style="margin-bottom:80px">
-      <div class="card">
-        <h3 style="margin-top:0">Contact</h3>
-        <p style="color:var(--muted)">Questions or taproom suggestions? Drop us a message.</p>
-
-        <form onsubmit="event.preventDefault(); alert('Thanks — we\\'ll get back to you!');" style="display:grid; gap:10px; margin-top:12px">
-          <input type="text" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03); background:transparent; color:inherit">
-          <input type="email" placeholder="Email" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03); background:transparent; color:inherit">
-          <textarea placeholder="Message" rows="4" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03); background:transparent; color:inherit"></textarea>
-          <div style="display:flex; gap:8px; justify-content:flex-end">
-            <button style="background:transparent; color:var(--muted); border:1px solid rgba(255,255,255,0.03); padding:8px 12px; border-radius:8px;">Clear</button>
-            <button type="submit" style="background:var(--accent); color:#081325; border:none; padding:8px 14px; border-radius:8px;">Send</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;">
-        <div>
-          <strong>Beer Run</strong><div style="color:var(--muted); font-size:13px; margin-top:6px">Fresh brews • Local taprooms • Fast delivery</div>
-        </div>
-        <div style="color:var(--muted); font-size:13px">© <span id="year"></span> Beer Run — All rights reserved</div>
-      </div>
-    </footer>
-  </main>
-
-  <script>
-    // small JS: update year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <p>Did you know that beer is one of the oldest recorded recipes in the world? 
+  Archaeologists discovered that ancient Sumerians were brewing beer over 5,000 years ago, 
+  and they even had a goddess of beer named Ninkasi. </p>
+  
+  <p>In fact, one of the earliest written texts in human history is a hymn to <strong> Ninkasi </strong></strongNinkasi>
+  that doubles as a beer recipe—proof that from the very beginning, people have been serious 
+  about perfecting their brew!</p>
 </body>
 </html>
+
+  
